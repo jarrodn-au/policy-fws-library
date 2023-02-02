@@ -50,6 +50,5 @@ summary = {
 
 // This Sentinel policy ensures that server instance type configuration does not violate a list of allowed types.
 main = rule {
-	false and
 	eval.summary(summary, "warn")
 }
