@@ -7,6 +7,7 @@ format = {
 
 summary = func(input, level) {
 	result = false
+	input.violations.append({ "name": "Dummy violation", "type": "Bad one", "address": "127.0.0.1", "message": "this is a dummy violation." })
 	if input.violations is empty {
 		return true
 	} else {
